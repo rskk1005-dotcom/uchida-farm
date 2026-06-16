@@ -3,108 +3,80 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>内田農場 — 土から食卓へ</title>
+  <title>うちだ畑 — 福岡・小郡の自然栽培</title>
+  <meta name="description" content="農薬・化学肥料不使用。福岡県小郡市から、家族で育てた旬の野菜をお届けします。"/>
+  <meta property="og:title" content="うちだ畑 — 福岡・小郡の自然栽培"/>
+  <meta property="og:description" content="農薬・化学肥料不使用。福岡県小郡市から、家族で育てた旬の野菜をお届けします。"/>
+  <meta property="og:type" content="website"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Shippori+Mincho+B1:wght@400;600;800&family=Noto+Sans+JP:wght@200;300;400&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-<!-- ======================================================
-     CUSTOM CURSOR
-====================================================== -->
 <div class="cursor" id="js-cursor"></div>
 <div class="cursor-ring" id="js-ring"></div>
-
-<!-- ======================================================
-     LOADING SCREEN
-====================================================== -->
 <div class="loader" id="js-loader">
   <div class="loader__inner">
     <svg class="loader__leaf" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 75 C30 75 5 55 5 30 C5 16.2 16.2 5 30 5 C43.8 5 55 16.2 55 30 C55 55 30 75 30 75Z"
-            stroke="#3d5a3e" stroke-width="1.2" fill="none" stroke-dasharray="200" stroke-dashoffset="200">
-        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="1.2s" fill="freeze" calcMode="spline"
-                 keySplines="0.16 1 0.3 1"/>
+      <path d="M30 75 C30 75 5 55 5 30 C5 16.2 16.2 5 30 5 C43.8 5 55 16.2 55 30 C55 55 30 75 30 75Z" stroke="#3d5a3e" stroke-width="1.2" fill="none" stroke-dasharray="200" stroke-dashoffset="200">
+        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
       </path>
       <line x1="30" y1="75" x2="30" y2="78" stroke="#3d5a3e" stroke-width="1.2" stroke-linecap="round"/>
     </svg>
-    <p class="loader__text">内田農場</p>
+    <p class="loader__text">うちだ畑</p>
   </div>
 </div>
-
-<!-- ======================================================
-     HEADER
-====================================================== -->
 <header class="header" id="js-header">
   <div class="header__wrap">
-    <a href="#" class="header__logo" aria-label="内田農場トップへ">
+    <a href="#" class="header__logo" aria-label="うちだ畑トップへ">
       <svg width="28" height="36" viewBox="0 0 28 36" fill="none" aria-hidden="true">
-        <path d="M14 33C14 33 2 22 2 13C2 6.37 7.37 1 14 1C20.63 1 26 6.37 26 13C26 22 14 33 14 33Z"
-              stroke="currentColor" stroke-width="1.1" fill="none"/>
+        <path d="M14 33C14 33 2 22 2 13C2 6.37 7.37 1 14 1C20.63 1 26 6.37 26 13C26 22 14 33 14 33Z" stroke="currentColor" stroke-width="1.1" fill="none"/>
         <line x1="14" y1="33" x2="14" y2="36" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
         <path d="M10 16C11.5 14 13 15 14 13" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.7"/>
       </svg>
-      <span class="header__logo-text">内田農場</span>
+      <span class="header__logo-text">うちだ畑</span>
     </a>
-
     <nav class="header__nav" id="js-nav">
-      <a href="#about"      class="header__link">農場紹介</a>
+      <a href="#about" class="header__link">畑について</a>
       <a href="#commitment" class="header__link">こだわり</a>
-      <a href="#products"   class="header__link">商品</a>
-      <a href="#contact"    class="header__link">お問い合わせ</a>
+      <a href="#products" class="header__link">お野菜</a>
+      <a href="#contact" class="header__link">お問い合わせ</a>
     </nav>
-
     <button class="header__burger" id="js-burger" aria-label="メニューを開く" aria-expanded="false">
       <span class="burger__bar"></span>
       <span class="burger__bar"></span>
     </button>
   </div>
-
-  <!-- Mobile drawer -->
   <div class="drawer" id="js-drawer" aria-hidden="true">
     <nav class="drawer__nav">
-      <a href="#about"      class="drawer__link">農場紹介</a>
+      <a href="#about" class="drawer__link">畑について</a>
       <a href="#commitment" class="drawer__link">こだわり</a>
-      <a href="#products"   class="drawer__link">商品</a>
-      <a href="#contact"    class="drawer__link">お問い合わせ</a>
+      <a href="#products" class="drawer__link">お野菜</a>
+      <a href="#contact" class="drawer__link">お問い合わせ</a>
     </nav>
-    <p class="drawer__since">Uchida Farm — Est. 1998</p>
+    <p class="drawer__since">uchidabatake — Ogori, Fukuoka — Est. 2024</p>
   </div>
 </header>
-
-<!-- ======================================================
-     HERO
-====================================================== -->
 <section class="hero" id="hero">
-
-  <!-- Ambient botanical SVG -->
   <div class="hero__art" aria-hidden="true">
     <svg class="hero__art-svg" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <!-- Large faint rings -->
       <circle cx="720" cy="450" r="380" stroke="#3d5a3e" stroke-width="0.4" opacity="0.06"/>
       <circle cx="720" cy="450" r="280" stroke="#3d5a3e" stroke-width="0.3" opacity="0.05"/>
       <circle cx="720" cy="450" r="180" stroke="#3d5a3e" stroke-width="0.25" opacity="0.04"/>
-
-      <!-- Botanical branch — left -->
       <g opacity="0.14" stroke="#3d5a3e" fill="none">
         <path d="M-40 880 Q180 640 300 420" stroke-width="0.9" stroke-linecap="round"/>
         <path d="M300 420 Q340 300 295 180" stroke-width="0.8" stroke-linecap="round"/>
         <path d="M300 420 Q420 370 520 335" stroke-width="0.8" stroke-linecap="round"/>
         <path d="M300 420 Q250 350 220 260" stroke-width="0.8" stroke-linecap="round"/>
-        <!-- Leaves -->
         <ellipse cx="220" cy="260" rx="22" ry="11" transform="rotate(-35 220 260)" opacity="0.9"/>
         <ellipse cx="295" cy="180" rx="24" ry="12" transform="rotate(18 295 180)" opacity="0.8"/>
         <ellipse cx="520" cy="335" rx="26" ry="13" transform="rotate(-12 520 335)" opacity="0.9"/>
-        <!-- Sub-branches -->
         <path d="M295 180 Q310 148 302 118" stroke-width="0.6" stroke-linecap="round"/>
         <ellipse cx="302" cy="118" rx="16" ry="8" transform="rotate(8 302 118)" opacity="0.7"/>
         <path d="M520 335 Q558 300 570 268" stroke-width="0.6" stroke-linecap="round"/>
         <ellipse cx="570" cy="268" rx="18" ry="9" transform="rotate(22 570 268)" opacity="0.7"/>
       </g>
-
-      <!-- Botanical branch — right -->
       <g opacity="0.10" stroke="#3d5a3e" fill="none">
         <path d="M1480 60 Q1240 260 1100 460" stroke-width="0.9" stroke-linecap="round"/>
         <path d="M1100 460 Q1040 560 1065 660" stroke-width="0.8" stroke-linecap="round"/>
@@ -114,97 +86,68 @@
         <ellipse cx="1065" cy="660" rx="22" ry="11" transform="rotate(-22 1065 660)" opacity="0.8"/>
         <ellipse cx="1168" cy="300" rx="20" ry="10" transform="rotate(42 1168 300)" opacity="0.9"/>
       </g>
-
-      <!-- Horizontal fine lines — ground plane -->
       <line x1="0" y1="872" x2="1440" y2="872" stroke="#8a7d6a" stroke-width="0.35" opacity="0.2"/>
-      <line x1="0" y1="875" x2="1440" y2="875" stroke="#8a7d6a" stroke-width="0.15" opacity="0.12"/>
-
-      <!-- Scattered micro dots -->
       <g fill="#3d5a3e" opacity="0.05">
-        <circle cx="100" cy="200" r="1.5"/>
-        <circle cx="380" cy="80"  r="1"/>
-        <circle cx="1060" cy="820" r="1.5"/>
-        <circle cx="1320" cy="680" r="1"/>
-        <circle cx="200" cy="720" r="1"/>
-        <circle cx="1200" cy="140" r="1.5"/>
-        <circle cx="640"  cy="820" r="1"/>
-        <circle cx="860"  cy="60"  r="1"/>
+        <circle cx="100" cy="200" r="1.5"/><circle cx="380" cy="80" r="1"/>
+        <circle cx="1060" cy="820" r="1.5"/><circle cx="1320" cy="680" r="1"/>
+        <circle cx="200" cy="720" r="1"/><circle cx="1200" cy="140" r="1.5"/>
       </g>
     </svg>
   </div>
-
-  <!-- Hero content -->
   <div class="hero__content">
-    <p class="hero__eyebrow fade-item" data-delay="0">Uchida Farm — Nagasaki, Japan — Est. 1998</p>
-
+    <p class="hero__eyebrow fade-item" data-delay="0">uchidabatake — Ogori, Fukuoka — Est. 2024</p>
     <h1 class="hero__title">
-      <span class="hero__title-row fade-item" data-delay="80">土から</span>
-      <span class="hero__title-row hero__title-row--italic fade-item" data-delay="160">生まれる</span>
-      <span class="hero__title-row fade-item" data-delay="240">本物の味</span>
+      <span class="hero__title-row fade-item" data-delay="80">畑から</span>
+      <span class="hero__title-row hero__title-row--italic fade-item" data-delay="160">とれたての</span>
+      <span class="hero__title-row fade-item" data-delay="240">命をどうぞ</span>
     </h1>
-
     <p class="hero__sub fade-item" data-delay="340">
-      農薬・化学肥料を一切使わない。<br>
-      長崎の大地と家族四人の手が育てる、命ある野菜を食卓へ。
+      農薬も化学肥料も使わない。<br>
+      福岡・小郡の大地で、家族みんなで育てた野菜を食卓へ。
     </p>
-
     <a href="#about" class="hero__cta fade-item" data-delay="440">
-      <span>農場を知る</span>
+      <span>畑を知る</span>
       <svg class="arrow-icon" width="32" height="10" viewBox="0 0 32 10" fill="none" aria-hidden="true">
         <line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" stroke-width="0.9"/>
         <path d="M24 1.5L29.5 5L24 8.5" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
       </svg>
     </a>
   </div>
-
-  <!-- Scroll indicator -->
   <div class="hero__scroll fade-item" data-delay="560" aria-hidden="true">
     <div class="scroll-bar"></div>
     <span class="scroll-label">scroll</span>
   </div>
 </section>
-
-<!-- ======================================================
-     STATEMENT BAND
-====================================================== -->
 <div class="statement">
   <div class="statement__inner">
-    <blockquote class="statement__quote reveal">
-      「食べることは、土を信じること。」
-    </blockquote>
+    <blockquote class="statement__quote reveal">「農薬も肥料も使わず、ただ土と向き合う。」</blockquote>
     <div class="statement__stem" aria-hidden="true"></div>
   </div>
 </div>
-
-<!-- ======================================================
-     ABOUT
-====================================================== -->
 <section class="about" id="about">
-
-  <!-- Left: sticky visual -->
   <div class="about__visual" aria-hidden="true">
     <div class="about__visual-sticky">
       <svg class="about__svg" viewBox="0 0 500 620" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Sand background -->
         <rect width="500" height="620" fill="#e8e2d4"/>
-
-        <!-- Giant leaf silhouette -->
-        <path d="M250 68 C370 112 455 235 430 368 C408 492 322 558 250 568 C178 558 92 492 70 368 C45 235 130 112 250 68Z"
-              fill="#3d5a3e" opacity="0.82"/>
-
-        <!-- Leaf internal vein lines -->
-        <line x1="250" y1="100" x2="250" y2="540" stroke="#e8e2d4" stroke-width="0.9" opacity="0.45"/>
-        <path d="M250 190 Q295 228 330 295" stroke="#e8e2d4" stroke-width="0.65" opacity="0.35" fill="none"/>
-        <path d="M250 190 Q205 228 170 295" stroke="#e8e2d4" stroke-width="0.65" opacity="0.35" fill="none"/>
-        <path d="M250 280 Q305 315 342 378" stroke="#e8e2d4" stroke-width="0.65" opacity="0.28" fill="none"/>
-        <path d="M250 280 Q195 315 158 378" stroke="#e8e2d4" stroke-width="0.65" opacity="0.28" fill="none"/>
-        <path d="M250 370 Q294 398 318 445" stroke="#e8e2d4" stroke-width="0.5"  opacity="0.22" fill="none"/>
-        <path d="M250 370 Q206 398 182 445" stroke="#e8e2d4" stroke-width="0.5"  opacity="0.22" fill="none"/>
-
-        <!-- Concentric oval behind leaf -->
-        <ellipse cx="250" cy="318" rx="145" ry="155" stroke="#3d5a3e" stroke-width="0.5" opacity="0.12" fill="none"/>
-
-        <!-- Corner registration marks -->
+        <path d="M250 580 Q240 480 220 400 Q200 320 180 260 Q160 200 170 140 Q180 80 220 50" stroke="#3d5a3e" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        <path d="M220 300 Q270 260 310 220 Q340 190 360 150" stroke="#3d5a3e" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+        <path d="M200 360 Q160 320 130 280 Q110 250 100 210" stroke="#3d5a3e" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+        <path d="M310 220 Q340 240 360 260" stroke="#3d5a3e" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+        <circle cx="360" cy="150" r="8" fill="#3d5a3e" opacity="0.85"/>
+        <circle cx="348" cy="138" r="6" fill="#3d5a3e" opacity="0.7"/>
+        <circle cx="372" cy="138" r="5" fill="#3d5a3e" opacity="0.6"/>
+        <circle cx="340" cy="158" r="5" fill="#3d5a3e" opacity="0.5"/>
+        <circle cx="382" cy="155" r="7" fill="#3d5a3e" opacity="0.75"/>
+        <circle cx="370" cy="168" r="6" fill="#3d5a3e" opacity="0.65"/>
+        <circle cx="100" cy="210" r="7" fill="#3d5a3e" opacity="0.8"/>
+        <circle cx="88" cy="198" r="5" fill="#3d5a3e" opacity="0.6"/>
+        <circle cx="112" cy="198" r="6" fill="#3d5a3e" opacity="0.65"/>
+        <circle cx="95" cy="222" r="5" fill="#3d5a3e" opacity="0.5"/>
+        <circle cx="362" cy="262" r="6" fill="#3d5a3e" opacity="0.7"/>
+        <circle cx="350" cy="252" r="4" fill="#3d5a3e" opacity="0.5"/>
+        <ellipse cx="330" cy="200" rx="18" ry="10" transform="rotate(-20 330 200)" fill="none" stroke="#3d5a3e" stroke-width="0.8" opacity="0.5"/>
+        <ellipse cx="125" cy="240" rx="16" ry="9" transform="rotate(25 125 240)" fill="none" stroke="#3d5a3e" stroke-width="0.8" opacity="0.5"/>
+        <ellipse cx="200" cy="160" rx="20" ry="11" transform="rotate(-10 200 160)" fill="none" stroke="#3d5a3e" stroke-width="0.8" opacity="0.45"/>
         <polyline points="22,22 22,58" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
         <polyline points="22,22 58,22" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
         <polyline points="478,22 442,22" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
@@ -213,51 +156,40 @@
         <polyline points="22,598 58,598" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
         <polyline points="478,598 442,598" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
         <polyline points="478,598 478,562" stroke="#3d5a3e" stroke-width="0.9" fill="none" opacity="0.5"/>
-
-        <!-- Catalog label -->
-        <text x="250" y="604" text-anchor="middle"
-              font-family="Cormorant Garamond, serif" font-size="9.5" fill="#3d5a3e"
-              letter-spacing="5" opacity="0.55">UCHIDA FARM — EST. 1998</text>
+        <text x="250" y="604" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9.5" fill="#3d5a3e" letter-spacing="5" opacity="0.55">UCHIDABATAKE — OGORI, FUKUOKA</text>
       </svg>
     </div>
   </div>
-
-  <!-- Right: content -->
   <div class="about__content">
     <p class="section-eyebrow reveal">Our Story</p>
-    <h2 class="about__heading reveal">
-      長崎の大地で、<br>
-      二十六年、<br>
-      育て続ける。
-    </h2>
-
-    <!-- Stat band -->
+    <h2 class="about__heading reveal">福岡・小郡で、<br>家族みんなで<br>育てています。</h2>
     <div class="about__stats reveal">
       <div class="stat-item">
-        <span class="stat-item__num">1998</span>
-        <span class="stat-item__label">創業年</span>
+        <span class="stat-item__num">2024</span>
+        <span class="stat-item__label">スタート年</span>
       </div>
       <span class="stat-item__rule" aria-hidden="true"></span>
       <div class="stat-item">
-        <span class="stat-item__num">2.4<em>ha</em></span>
-        <span class="stat-item__label">栽培面積</span>
+        <span class="stat-item__num">0</span>
+        <span class="stat-item__label">農薬・化学肥料</span>
       </div>
       <span class="stat-item__rule" aria-hidden="true"></span>
       <div class="stat-item">
-        <span class="stat-item__num">4</span>
-        <span class="stat-item__label">家族人数</span>
+        <span class="stat-item__num">1<em>家族</em></span>
+        <span class="stat-item__label">子どもも参加</span>
       </div>
     </div>
-
-    <p class="about__body reveal">
-      長崎県諫早市の小さな農場から、私たち家族四人の営みが始まりました。農薬も化学肥料も使わない。それは創業から一度も揺らいでいない、内田農場の哲学です。
+    <p class="about__body reveal">「安心安全な食と農」をポリシーに、2024年3月に福岡県小郡市ではじめた小さな畑です。農薬も化学肥料も使わず、普段使いの野菜を丁寧に育てています。</p>
+    <p class="about__body reveal">1年が過ぎ、そら豆・ケール・大根・ブロッコリー・じゃがいも、そして桑の実や梅など、いろんな作物が育ち始めました。子どもたちも一緒に、家族みんなで土を耕しています。</p>
+    <p class="about__body reveal">Instagramでは畑の日常を発信中。<br>
+      <a class="insta-link" href="https://www.instagram.com/uchidabatake" target="_blank" rel="noopener">@uchidabatake
+        <svg class="arrow-icon" width="22" height="8" viewBox="0 0 22 8" fill="none" aria-hidden="true">
+          <line x1="0" y1="4" x2="19" y2="4" stroke="currentColor" stroke-width="0.9"/>
+          <path d="M16 1L20.5 4L16 7" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+        </svg>
+      </a>
     </p>
-    <p class="about__body reveal">
-      微生物が息づく土。季節の風。長崎の陽光と雨。すべての自然の力を借りながら、野菜は自らの時間をかけて育ちます。私たちはただ、その過程に誠実に寄り添うだけです。
-    </p>
-
-    <a href="#commitment" class="text-arrow reveal">
-      こだわりを見る
+    <a href="#commitment" class="text-arrow reveal">こだわりを見る
       <svg class="arrow-icon" width="28" height="9" viewBox="0 0 28 9" fill="none" aria-hidden="true">
         <line x1="0" y1="4.5" x2="24" y2="4.5" stroke="currentColor" stroke-width="0.9"/>
         <path d="M20.5 1.5L25.5 4.5L20.5 7.5" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
@@ -265,314 +197,251 @@
     </a>
   </div>
 </section>
-
-<!-- ======================================================
-     THIN DIVIDER
-====================================================== -->
 <div class="wave-divider" aria-hidden="true">
   <svg viewBox="0 0 1440 56" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <path d="M0 28 Q360 4 720 28 Q1080 52 1440 28" stroke="#c8bfaf" stroke-width="0.5" fill="none"/>
   </svg>
 </div>
-
-<!-- ======================================================
-     COMMITMENT
-====================================================== -->
 <section class="commitment" id="commitment">
   <div class="commitment__head">
     <p class="section-eyebrow reveal">Our Commitment</p>
-    <h2 class="commitment__title reveal">四つの約束</h2>
-    <p class="commitment__lead reveal">自然との対話から生まれる、<br>内田農場の変わらぬ姿勢。</p>
+    <h2 class="commitment__title reveal">うちだ畑のこだわり</h2>
+    <p class="commitment__lead reveal">自然と向き合いながら、ブレずに守り続けること。</p>
   </div>
-
   <ul class="commitment__list">
-
-    <!-- 01 -->
     <li class="c-item reveal-left">
       <span class="c-item__num">01</span>
       <div class="c-item__icon" aria-hidden="true">
         <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Soil wave lines -->
           <path d="M12 50 Q36 40 60 50" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"/>
           <path d="M16 57 Q36 49 56 57" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.45"/>
-          <!-- Stem -->
           <line x1="36" y1="49" x2="36" y2="22" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-          <!-- Left leaf -->
           <path d="M36 34 C36 34 22 26 16 14 C26 18 35 30 36 34Z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
-          <!-- Right leaf -->
           <path d="M36 26 C36 26 50 18 56 6 C46 10 37 22 36 26Z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
-          <!-- Roots -->
           <path d="M30 49 Q26 58 22 64" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
           <path d="M36 49 Q36 60 34 66" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
           <path d="M42 49 Q46 58 50 64" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
         </svg>
       </div>
       <div class="c-item__body">
-        <h3 class="c-item__heading">土を育てる</h3>
-        <p class="c-item__text">野菜づくりの本質は土づくり。自家製堆肥と緑肥作物で微生物が活きる豊かな土壌を、年月をかけて醸成しています。化学的な力を借りず、生態系の力を最大限に引き出すことが私たちの仕事の出発点です。</p>
+        <h3 class="c-item__heading">農薬・化学肥料は使わない</h3>
+        <p class="c-item__text">創業から一貫して、農薬も化学肥料も使っていません。手間はかかりますが、安心して食べてもらえる野菜を届けるために、この選択を守り続けています。</p>
       </div>
     </li>
-
-    <!-- 02 -->
     <li class="c-item reveal-right">
       <span class="c-item__num">02</span>
       <div class="c-item__icon" aria-hidden="true">
         <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Sun circle -->
           <circle cx="36" cy="28" r="11" stroke="currentColor" stroke-width="1.1" fill="none"/>
-          <!-- Rays -->
-          <line x1="36" y1="10" x2="36" y2="4"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="50" y1="14" x2="54" y2="10"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="54" y1="28" x2="60" y2="28"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="50" y1="42" x2="54" y2="46"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="22" y1="42" x2="18" y2="46"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="18" y1="28" x2="12" y2="28"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <line x1="22" y1="14" x2="18" y2="10"   stroke="currentColor" stroke-width="1"   stroke-linecap="round"/>
-          <!-- Raindrop -->
-          <path d="M36 50 C36 50 30 57 30 61.5 C30 64.5 32.7 67 36 67 C39.3 67 42 64.5 42 61.5 C42 57 36 50 36 50Z"
-                stroke="currentColor" stroke-width="1.1" fill="none"/>
+          <line x1="36" y1="10" x2="36" y2="4" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="50" y1="14" x2="54" y2="10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="54" y1="28" x2="60" y2="28" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="50" y1="42" x2="54" y2="46" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="22" y1="42" x2="18" y2="46" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="18" y1="28" x2="12" y2="28" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <line x1="22" y1="14" x2="18" y2="10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <path d="M36 50 C36 50 30 57 30 61.5 C30 64.5 32.7 67 36 67 C39.3 67 42 64.5 42 61.5 C42 57 36 50 36 50Z" stroke="currentColor" stroke-width="1.1" fill="none"/>
         </svg>
       </div>
       <div class="c-item__body">
-        <h3 class="c-item__heading">自然の力のみで</h3>
-        <p class="c-item__text">農薬・除草剤・化学肥料は一切使用しません。長崎の温暖な気候と豊富な雨が、野菜本来の甘みと力強さを引き出します。不便な選択ですが、私たちはその不便を誠実に続けることを選んでいます。</p>
+        <h3 class="c-item__heading">普段使いの野菜を育てる</h3>
+        <p class="c-item__text">珍しい野菜より、毎日の食卓に並ぶ野菜を。そら豆・ケール・大根・ブロッコリー・じゃがいもなど、日常に寄り添う作物を丁寧に育てています。</p>
       </div>
     </li>
-
-    <!-- 03 -->
     <li class="c-item reveal-left">
       <span class="c-item__num">03</span>
       <div class="c-item__icon" aria-hidden="true">
         <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Palm/hand outline -->
-          <path d="M24 56 L24 33 C24 31.3 25.3 30 27 30 C28.7 30 30 31.3 30 33 L30 40
-                   C30 38.3 31.3 37 33 37 C34.7 37 36 38.3 36 40 L36 39
-                   C36 37.3 37.3 36 39 36 C40.7 36 42 37.3 42 39 L42 41
-                   C42 39.3 43.3 38 45 38 C46.7 38 48 39.3 48 41 L48 54
-                   C48 60.6 42.6 66 36 66 L34 66 C28.5 66 24 61.5 24 56Z"
-                stroke="currentColor" stroke-width="1.1" fill="none" stroke-linejoin="round"/>
-          <!-- Small sprig in hand -->
+          <path d="M24 56 L24 33 C24 31.3 25.3 30 27 30 C28.7 30 30 31.3 30 33 L30 40 C30 38.3 31.3 37 33 37 C34.7 37 36 38.3 36 40 L36 39 C36 37.3 37.3 36 39 36 C40.7 36 42 37.3 42 39 L42 41 C42 39.3 43.3 38 45 38 C46.7 38 48 39.3 48 41 L48 54 C48 60.6 42.6 66 36 66 L34 66 C28.5 66 24 61.5 24 56Z" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linejoin="round"/>
           <line x1="30" y1="33" x2="30" y2="18" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" opacity="0.6"/>
           <path d="M30 26 C30 26 21 20 17 11 C25 14 30 24 30 26Z" fill="none" stroke="currentColor" stroke-width="0.85" opacity="0.55"/>
-          <path d="M30 21 C30 21 39 15 43 6 C35 9 30 19 30 21Z"  fill="none" stroke="currentColor" stroke-width="0.85" opacity="0.55"/>
+          <path d="M30 21 C30 21 39 15 43 6 C35 9 30 19 30 21Z" fill="none" stroke="currentColor" stroke-width="0.85" opacity="0.55"/>
         </svg>
       </div>
       <div class="c-item__body">
-        <h3 class="c-item__heading">手仕事の誠実さ</h3>
-        <p class="c-item__text">機械に頼りすぎず、家族の手で草を取り、苗を植え、収穫します。効率より誠実さを選ぶことが、野菜のおいしさに直結すると信じています。手間をかけることは、野菜への敬意です。</p>
+        <h3 class="c-item__heading">家族の手で、丁寧に</h3>
+        <p class="c-item__text">子どもたちも畑に入り、家族みんなで育てています。雨の前に急いでじゃがいもを掘ったり、桑の実からジャムを作ったり。その日々がそのまま野菜の味になると信じています。</p>
       </div>
     </li>
-
-    <!-- 04 -->
     <li class="c-item reveal-right">
       <span class="c-item__num">04</span>
       <div class="c-item__icon" aria-hidden="true">
         <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Box body -->
           <rect x="14" y="34" width="44" height="28" rx="1.5" stroke="currentColor" stroke-width="1.1" fill="none"/>
-          <!-- Box top flaps -->
           <path d="M14 34 L36 22 L58 34" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linejoin="round"/>
-          <!-- Vertical center fold -->
           <line x1="36" y1="22" x2="36" y2="62" stroke="currentColor" stroke-width="0.7" stroke-dasharray="3 2.5" opacity="0.38"/>
-          <!-- Horizontal fold -->
-          <line x1="14" y1="34" x2="58" y2="34" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
-          <!-- Arrow inside -->
           <line x1="22" y1="49" x2="35" y2="49" stroke="currentColor" stroke-width="0.9" stroke-linecap="round"/>
           <path d="M31.5 45.5L36 49L31.5 52.5" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
       <div class="c-item__body">
-        <h3 class="c-item__heading">採れたて直送</h3>
-        <p class="c-item__text">収穫した翌日には出荷。鮮度と生命力を保ったまま、畑から直接食卓へ届けます。産地と食卓の距離を、できる限り縮めること。それが私たちの最後の仕事です。</p>
+        <h3 class="c-item__heading">80サイズで九州へ直送</h3>
+        <p class="c-item__text">収穫した野菜は80サイズの宅配便でお届けします。送料は九州内で1,000円程度。採れたての鮮度をできるだけそのままに、食卓へ届けます。</p>
       </div>
     </li>
-
   </ul>
 </section>
-
-<!-- ======================================================
-     PRODUCTS
-====================================================== -->
 <section class="products" id="products">
   <div class="products__head">
-    <p class="section-eyebrow reveal">Seasonal Catalog</p>
-    <h2 class="products__title reveal">旬の便り</h2>
-    <p class="products__sub reveal">季節のリズムで、最も力のある野菜を届けます。</p>
+    <p class="section-eyebrow reveal">What We Grow</p>
+    <h2 class="products__title reveal">今の畑から</h2>
+    <p class="products__sub reveal">季節ごとに、畑で一番元気な野菜をお届けします。</p>
   </div>
-
   <div class="products__entries">
-
-    <!-- Entry 01 -->
     <article class="p-entry reveal">
       <div class="p-entry__art" aria-hidden="true">
         <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <rect width="480" height="360" fill="#eae4d8"/>
-          <!-- Leafy greens abstract -->
-          <line x1="240" y1="300" x2="240" y2="80" stroke="#3d5a3e" stroke-width="1.3" stroke-linecap="round"/>
-          <path d="M240 145 C240 145 196 113 178 74 C206 85 238 130 240 145Z"  fill="#3d5a3e" opacity="0.7"/>
-          <path d="M240 133 C240 133 284 101 302 62 C274 73 241 118 240 133Z"  fill="#3d5a3e" opacity="0.82"/>
-          <path d="M240 180 C240 180 204 158 186 128 C210 135 239 172 240 180Z" fill="#3d5a3e" opacity="0.52"/>
-          <path d="M240 171 C240 171 276 149 294 119 C270 126 241 163 240 171Z" fill="#3d5a3e" opacity="0.62"/>
-          <path d="M240 215 C240 215 208 197 194 172 C215 178 239 208 240 215Z" fill="#3d5a3e" opacity="0.38"/>
-          <path d="M240 208 C240 208 272 190 286 165 C265 171 241 201 240 208Z" fill="#3d5a3e" opacity="0.45"/>
-          <!-- Ground -->
-          <line x1="100" y1="302" x2="380" y2="302" stroke="#8a7d6a" stroke-width="0.5" opacity="0.3"/>
-          <ellipse cx="240" cy="303" rx="58" ry="7" fill="#3d5a3e" opacity="0.07"/>
-          <!-- Corner marks -->
-          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
+          <line x1="160" y1="300" x2="160" y2="90" stroke="#3d5a3e" stroke-width="1.1" stroke-linecap="round"/>
+          <path d="M160 160 Q136 140 128 110 C142 118 158 148 160 160Z" fill="#3d5a3e" opacity="0.65"/>
+          <path d="M160 140 Q184 120 192 90 C178 98 161 128 160 140Z" fill="#3d5a3e" opacity="0.75"/>
+          <path d="M160 200 Q136 184 128 158 C142 164 158 192 160 200Z" fill="#3d5a3e" opacity="0.5"/>
+          <path d="M160 185 Q184 169 192 143 C178 149 161 177 160 185Z" fill="#3d5a3e" opacity="0.6"/>
+          <path d="M240 300 Q238 260 240 220 Q242 190 238 162" stroke="#3d5a3e" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+          <path d="M225 222 C218 207 220 190 230 184 C240 178 250 187 248 202 C246 217 237 227 225 222Z" fill="#3d5a3e" opacity="0.75"/>
+          <path d="M232 257 C224 242 227 224 237 219 C247 214 256 224 253 239 C250 254 241 264 232 257Z" fill="#3d5a3e" opacity="0.65"/>
+          <path d="M330 300 C352 300 368 270 364 230 L358 180 C356 162 342 152 330 152 C318 152 304 162 302 180 L296 230 C292 270 308 300 330 300Z" fill="#3d5a3e" opacity="0.7"/>
+          <line x1="330" y1="165" x2="330" y2="285" stroke="#eae4d8" stroke-width="0.7" opacity="0.4"/>
+          <path d="M320 153 C320 153 308 130 305 110 C316 120 320 145 320 153Z" fill="#3d5a3e" opacity="0.6"/>
+          <path d="M330 152 C330 152 330 126 332 108 C336 122 333 144 330 152Z" fill="#3d5a3e" opacity="0.65"/>
+          <path d="M340 153 C340 153 352 130 355 110 C344 120 340 145 340 153Z" fill="#3d5a3e" opacity="0.6"/>
+          <line x1="80" y1="302" x2="400" y2="302" stroke="#8a7d6a" stroke-width="0.5" opacity="0.3"/>
+          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
         </svg>
       </div>
       <div class="p-entry__body">
-        <p class="p-entry__tag">Weekly Delivery / 毎週お届け</p>
-        <h3 class="p-entry__name">旬の野菜セット</h3>
-        <p class="p-entry__desc">その週に最も生命力のある野菜を、畑から選りすぐってお届けします。量より質を。季節の変化とともに、食卓に物語を。定期便での継続利用が可能です。</p>
+        <p class="p-entry__tag">Seasonal Set / 時々販売</p>
+        <h3 class="p-entry__name">うちだ畑の<br>詰め合わせ</h3>
+        <p class="p-entry__desc">畑を賑わしている野菜をそのままセットに。そら豆・ケール・大根・ブロッコリー・木酢ジャムなど、その時期に一番元気な作物をお届けします。内容はおまかせ。</p>
         <div class="p-entry__price">
-          <span class="p-entry__price-num">¥2,800</span>
-          <span class="p-entry__price-from">〜 / 回</span>
+          <span class="p-entry__price-num">¥1,500</span>
+          <span class="p-entry__price-from">野菜代 + 送料（九州内 ¥1,000程度）</span>
         </div>
       </div>
     </article>
-
-    <!-- Entry 02 (reversed) -->
     <article class="p-entry p-entry--flip reveal">
       <div class="p-entry__art" aria-hidden="true">
         <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <rect width="480" height="360" fill="#e2dbd0"/>
-          <!-- Root vegetable abstract -->
-          <path d="M240 52 C262 52 282 68 284 105 L280 196 C278 212 262 228 240 231 C218 228 202 212 200 196 L196 105 C198 68 218 52 240 52Z"
-                fill="#3d5a3e" opacity="0.78"/>
-          <!-- Root tendrils -->
-          <path d="M222 222 Q213 244 200 256" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" opacity="0.45" fill="none"/>
-          <path d="M240 231 Q240 250 236 264" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" opacity="0.45" fill="none"/>
-          <path d="M258 222 Q267 243 280 254" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" opacity="0.45" fill="none"/>
-          <!-- Top greens -->
-          <path d="M228 54 C228 54 212 32 206 13 C220 23 228 46 228 54Z" fill="#3d5a3e" opacity="0.62"/>
-          <path d="M240 52 C240 52 240 26 242 8 C246 23 243 44 240 52Z"  fill="#3d5a3e" opacity="0.68"/>
-          <path d="M252 54 C252 54 268 32 274 13 C260 23 252 46 252 54Z" fill="#3d5a3e" opacity="0.62"/>
-          <!-- Center vein -->
-          <line x1="240" y1="72" x2="240" y2="214" stroke="#e2dbd0" stroke-width="0.75" opacity="0.48"/>
-          <!-- Corner marks -->
-          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
+          <path d="M240 320 Q230 260 215 200 Q200 145 210 100 Q218 68 240 50" stroke="#3d5a3e" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+          <path d="M215 180 Q258 155 290 125" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <path d="M220 230 Q178 205 152 175" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" fill="none"/>
+          <circle cx="290" cy="125" r="9" fill="#3d5a3e" opacity="0.88"/>
+          <circle cx="276" cy="113" r="7" fill="#3d5a3e" opacity="0.72"/>
+          <circle cx="304" cy="113" r="6" fill="#3d5a3e" opacity="0.62"/>
+          <circle cx="268" cy="128" r="5" fill="#3d5a3e" opacity="0.5"/>
+          <circle cx="308" cy="132" r="7" fill="#3d5a3e" opacity="0.78"/>
+          <circle cx="294" cy="140" r="6" fill="#3d5a3e" opacity="0.65"/>
+          <circle cx="152" cy="175" r="8" fill="#3d5a3e" opacity="0.82"/>
+          <circle cx="140" cy="163" r="6" fill="#3d5a3e" opacity="0.65"/>
+          <circle cx="164" cy="163" r="5" fill="#3d5a3e" opacity="0.58"/>
+          <circle cx="146" cy="187" r="5" fill="#3d5a3e" opacity="0.5"/>
+          <circle cx="166" cy="184" r="6" fill="#3d5a3e" opacity="0.7"/>
+          <rect x="172" y="252" width="96" height="70" rx="8" stroke="#3d5a3e" stroke-width="1" fill="none" opacity="0.5"/>
+          <rect x="168" y="244" width="104" height="18" rx="4" stroke="#3d5a3e" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
         </svg>
       </div>
       <div class="p-entry__body">
-        <p class="p-entry__tag">Autumn &amp; Winter / 秋冬限定</p>
-        <h3 class="p-entry__name">根菜のおまかせ便</h3>
-        <p class="p-entry__desc">大地の深くで時間をかけて育つ根菜たち。大根、人参、里芋、蕪。土の甘みをそのまま閉じ込めた、滋味深い味わいをお届けします。寒い季節だけの、特別な便り。</p>
+        <p class="p-entry__tag">Handmade / 手づくり</p>
+        <h3 class="p-entry__name">桑の実ジャム<br>&amp; 季節の加工品</h3>
+        <p class="p-entry__desc">畑で育った桑の実や梅などを使った手づくりの加工品も。年々枯れてきたと思っていた桑の木が今年はたわわに実り、家族でジャムを仕込みました。数量限定です。</p>
         <div class="p-entry__price">
-          <span class="p-entry__price-num">¥3,200</span>
-          <span class="p-entry__price-from">〜 / 箱</span>
+          <span class="p-entry__price-num">数量限定</span>
+          <span class="p-entry__price-from">DMにてご確認ください</span>
         </div>
       </div>
     </article>
-
-    <!-- Entry 03 -->
     <article class="p-entry reveal">
       <div class="p-entry__art" aria-hidden="true">
         <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <rect width="480" height="360" fill="#ede7db"/>
-          <!-- Gift / elegant box -->
-          <rect x="138" y="130" width="204" height="148" rx="1.5" stroke="#3d5a3e" stroke-width="1.2" fill="none"/>
-          <!-- Lid area -->
-          <rect x="138" y="130" width="204" height="36" fill="#3d5a3e" opacity="0.07"/>
-          <line x1="138" y1="166" x2="342" y2="166" stroke="#3d5a3e" stroke-width="0.5" opacity="0.22"/>
-          <!-- Vertical ribbon -->
-          <line x1="240" y1="130" x2="240" y2="278" stroke="#3d5a3e" stroke-width="1" opacity="0.55"/>
-          <!-- Bow left -->
-          <path d="M240 130 C234 110 214 104 212 115 C210 126 232 130 240 130Z" stroke="#3d5a3e" stroke-width="1" fill="none"/>
-          <!-- Bow right -->
-          <path d="M240 130 C246 110 266 104 268 115 C270 126 248 130 240 130Z" stroke="#3d5a3e" stroke-width="1" fill="none"/>
-          <!-- Botanical sprig on box face -->
-          <line x1="168" y1="196" x2="168" y2="175" stroke="#3d5a3e" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
-          <path d="M168 186 C168 186 159 181 155 172 C162 174 168 183 168 186Z" fill="#3d5a3e" opacity="0.42"/>
-          <path d="M168 181 C168 181 177 176 181 167 C174 169 168 178 168 181Z" fill="#3d5a3e" opacity="0.42"/>
-          <!-- Corner marks -->
-          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
-          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.4"/>
+          <rect x="140" y="70" width="200" height="200" rx="16" stroke="#3d5a3e" stroke-width="1.2" fill="none"/>
+          <rect x="156" y="86" width="168" height="130" rx="4" fill="#3d5a3e" opacity="0.06"/>
+          <ellipse cx="220" cy="145" rx="28" ry="22" fill="#3d5a3e" opacity="0.55"/>
+          <ellipse cx="248" cy="158" rx="24" ry="19" fill="#3d5a3e" opacity="0.45"/>
+          <ellipse cx="200" cy="162" rx="20" ry="16" fill="#3d5a3e" opacity="0.4"/>
+          <rect x="216" y="88" width="28" height="22" rx="3" stroke="#3d5a3e" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <circle cx="230" cy="99" r="5" stroke="#3d5a3e" stroke-width="0.7" fill="none" opacity="0.4"/>
+          <path d="M160 232 C160 228 163 226 167 228 C171 226 174 228 174 232 C174 237 167 242 167 242 C167 242 160 237 160 232Z" stroke="#3d5a3e" stroke-width="0.8" fill="none" opacity="0.45"/>
+          <rect x="182" y="228" width="14" height="12" rx="3" stroke="#3d5a3e" stroke-width="0.8" fill="none" opacity="0.35"/>
+          <path d="M240 248 Q270 248 280 248" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" opacity="0.5" fill="none"/>
+          <path d="M276 244L281 248L276 252" stroke="#3d5a3e" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+          <rect x="156" y="272" width="80" height="6" rx="3" fill="#3d5a3e" opacity="0.18"/>
+          <rect x="244" y="272" width="48" height="6" rx="3" fill="#3d5a3e" opacity="0.1"/>
+          <polyline points="18,18 18,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="18,18 42,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 438,18" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
+          <polyline points="462,18 462,42" stroke="#8a7d6a" stroke-width="0.7" fill="none" opacity="0.35"/>
         </svg>
       </div>
       <div class="p-entry__body">
-        <p class="p-entry__tag">Gift / 贈り物に</p>
-        <h3 class="p-entry__name">ギフトセット</h3>
-        <p class="p-entry__desc">大切な方へ、土の恵みを贈り物として。丁寧に選んだ旬野菜と、農場からの手書きメッセージカードをお添えします。誕生日・お中元・お歳暮など、あらゆる贈り物の機会に。</p>
+        <p class="p-entry__tag">How to Order / ご注文方法</p>
+        <h3 class="p-entry__name">Instagram DM<br>からどうぞ</h3>
+        <p class="p-entry__desc">ご注文・お問い合わせはInstagramのDMにてお気軽にご連絡ください。詰め合わせの内容はおまかせになります。一定数に達し次第、販売終了となります。</p>
         <div class="p-entry__price">
-          <span class="p-entry__price-num">¥4,500</span>
-          <span class="p-entry__price-from">〜 / 箱</span>
+          <a href="https://www.instagram.com/uchidabatake" target="_blank" rel="noopener" class="insta-btn">@uchidabatake へDM
+            <svg class="arrow-icon" width="22" height="8" viewBox="0 0 22 8" fill="none" aria-hidden="true">
+              <line x1="0" y1="4" x2="19" y2="4" stroke="currentColor" stroke-width="0.9"/>
+              <path d="M16 1L20.5 4L16 7" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+            </svg>
+          </a>
         </div>
       </div>
     </article>
-
   </div>
 </section>
-
-<!-- ======================================================
-     CONTACT
-====================================================== -->
 <section class="contact" id="contact">
   <div class="contact__wrap">
-
-    <!-- Left column -->
     <div class="contact__info-col">
       <p class="section-eyebrow section-eyebrow--light reveal">Get in Touch</p>
       <h2 class="contact__title reveal">お問い合わせ</h2>
-      <p class="contact__lead reveal">
-        ご注文・ご質問は<br>お気軽にどうぞ。<br>農場から直接<br>ご連絡いたします。
-      </p>
-
+      <p class="contact__lead reveal">ご質問・ご注文は<br>お気軽にどうぞ。<br>できるだけ早く<br>ご返信いたします。</p>
       <ul class="contact__details reveal">
         <li class="contact__detail">
-          <span class="contact__detail-key">TEL</span>
+          <span class="contact__detail-key">SNS</span>
           <div>
-            <p class="contact__detail-val">0957-XX-XXXX</p>
-            <p class="contact__detail-note">平日 9:00 – 17:00</p>
+            <p class="contact__detail-val">@uchidabatake</p>
+            <p class="contact__detail-note">Instagram DM が一番早いです</p>
           </div>
         </li>
         <li class="contact__detail">
-          <span class="contact__detail-key">MAIL</span>
-          <p class="contact__detail-val">info@uchida-farm.jp</p>
+          <span class="contact__detail-key">ADDR</span>
+          <p class="contact__detail-val">福岡県 小郡市</p>
         </li>
         <li class="contact__detail">
-          <span class="contact__detail-key">ADDR</span>
-          <p class="contact__detail-val">長崎県 諫早市</p>
+          <span class="contact__detail-key">SHIP</span>
+          <p class="contact__detail-val">九州内 80サイズ ¥1,000程度</p>
         </li>
       </ul>
     </div>
-
-    <!-- Right column: Form -->
     <div class="contact__form-col reveal">
       <form class="c-form" id="js-form" novalidate>
-
         <div class="c-field">
           <label class="c-field__label" for="f-name">お名前</label>
-          <input class="c-field__input" type="text" id="f-name" name="name"
-                 placeholder="山田 太郎" autocomplete="name" required/>
+          <input class="c-field__input" type="text" id="f-name" name="name" placeholder="山田 太郎" autocomplete="name" required/>
           <span class="c-field__line" aria-hidden="true"></span>
         </div>
-
         <div class="c-field">
           <label class="c-field__label" for="f-email">メールアドレス</label>
-          <input class="c-field__input" type="email" id="f-email" name="email"
-                 placeholder="your@email.com" autocomplete="email" required/>
+          <input class="c-field__input" type="email" id="f-email" name="email" placeholder="your@email.com" autocomplete="email" required/>
           <span class="c-field__line" aria-hidden="true"></span>
         </div>
-
         <div class="c-field">
           <label class="c-field__label" for="f-type">お問い合わせ種別</label>
           <div class="c-field__select-wrap">
             <select class="c-field__select" id="f-type" name="type">
               <option value="">選択してください</option>
-              <option>野菜セットのご注文</option>
-              <option>定期便について</option>
-              <option>ギフトセットについて</option>
-              <option>農場見学について</option>
+              <option>詰め合わせのご注文</option>
+              <option>桑の実ジャムについて</option>
+              <option>配送について</option>
+              <option>次回販売の通知希望</option>
               <option>その他</option>
             </select>
             <svg class="c-field__chevron" width="11" height="6" viewBox="0 0 11 6" fill="none" aria-hidden="true">
@@ -581,14 +450,11 @@
           </div>
           <span class="c-field__line" aria-hidden="true"></span>
         </div>
-
         <div class="c-field">
           <label class="c-field__label" for="f-msg">メッセージ</label>
-          <textarea class="c-field__textarea" id="f-msg" name="message"
-                    rows="5" placeholder="ご自由にお書きください" required></textarea>
+          <textarea class="c-field__textarea" id="f-msg" name="message" rows="5" placeholder="ご自由にお書きください" required></textarea>
           <span class="c-field__line" aria-hidden="true"></span>
         </div>
-
         <button type="submit" class="c-submit" id="js-submit">
           <span class="c-submit__label">送信する</span>
           <svg class="arrow-icon c-submit__arrow" width="32" height="10" viewBox="0 0 32 10" fill="none" aria-hidden="true">
@@ -596,39 +462,29 @@
             <path d="M24 1.5L29.5 5L24 8.5" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
           </svg>
         </button>
-
         <p class="c-form__thanks" id="js-thanks" aria-live="polite"></p>
       </form>
     </div>
-
   </div>
 </section>
-
-<!-- ======================================================
-     FOOTER
-====================================================== -->
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__brand">
       <svg width="22" height="28" viewBox="0 0 28 36" fill="none" aria-hidden="true">
-        <path d="M14 33C14 33 2 22 2 13C2 6.37 7.37 1 14 1C20.63 1 26 6.37 26 13C26 22 14 33 14 33Z"
-              stroke="currentColor" stroke-width="1.1" fill="none"/>
+        <path d="M14 33C14 33 2 22 2 13C2 6.37 7.37 1 14 1C20.63 1 26 6.37 26 13C26 22 14 33 14 33Z" stroke="currentColor" stroke-width="1.1" fill="none"/>
         <line x1="14" y1="33" x2="14" y2="36" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
       </svg>
-      <span>内田農場</span>
+      <span>うちだ畑</span>
     </div>
-
     <nav class="footer__nav" aria-label="フッターナビゲーション">
-      <a href="#about">農場紹介</a>
+      <a href="#about">畑について</a>
       <a href="#commitment">こだわり</a>
-      <a href="#products">商品</a>
+      <a href="#products">お野菜</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
-
-    <p class="footer__copy">&copy; 2024 内田農場. All rights reserved.</p>
+    <p class="footer__copy">&copy; 2024 うちだ畑. All rights reserved.</p>
   </div>
 </footer>
-
 <script src="main.js"></script>
 </body>
 </html>
